@@ -1,12 +1,12 @@
 <div class="jumbotron signup-panel">
-	<h2>Welcome! Please register in our Registee App!</h2>
-	<%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %>
+	<h2>Добро пожаловать в новое приложение Registee!</h2>
+	<%= link_to "Регистрация", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
 <div class ="row">
 <% if @users.any? %>
 	<div class = "col-lg-8 col-lg-offset-2 user-list">
-		<h3>User list</h3>
+		<h3>Список пользователей</h3>
 		<% @users.each do |user| %>
 			<ul class="list">
 				<li class="slot"> <%= link_to user.surename + ' ' + 

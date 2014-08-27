@@ -30,7 +30,7 @@ ul li {
 
 .list li {
 	padding: 0.5em 0;
-	border-bottom: 1px solid #f0f0f0;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .user-list h3 {
@@ -48,7 +48,7 @@ ul li {
 
 	h4 {
 		padding: 0.5em 0 0.5em 0;
-		border-bottom: 1px solid #f0f0f0;
+		border-bottom: 1px solid #e5e5e5;
 	}
 
 	.profile {
@@ -57,4 +57,7 @@ ul li {
 	}
 }
 
-
+.error-list {
+	padding: 0;
+	margin: 0;
+}
