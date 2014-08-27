@@ -1,0 +1,25 @@
+<div class="jumbotron signup-panel">
+	<h2>Welcome! Please register in our Registee App!</h2>
+	<%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class ="row">
+<% if @users.any? %>
+	<div class = "col-lg-8 col-lg-offset-2 user-list">
+		<h3>User list</h3>
+		<% @users.each do |user| %>
+			<ul class="list">
+				<li class="slot"> <%= link_to user.surename + ' ' + 
+				 user.name + ' ' + user.second_name, user %></li>
+			</ul>
+		<% end %>
+	</div>
+</div>
+
+<div class="row  col-lg-5 col-lg-offset-5">
+	<div class="page">
+		<%= will_paginate @users, renderer: BootstrapPagination::Rails %>
+	</div>
+</div>
+
+<% end %>

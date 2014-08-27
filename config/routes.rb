@@ -1,4 +1,9 @@
 Registree::Application.routes.draw do
+  
+  root :to => 'users#index'
+  resources :users, only: [:index, :new, :create, :show]
+
+  match '/signup', :to => 'users#new', :via => 'get'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

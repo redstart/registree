@@ -1,0 +1,17 @@
+<div class="profile-tab">
+
+	<div class="profile-tab">
+
+		<h4><%= @user.name %>'s Profile</h4>
+
+		<ul class="profile">
+			<li> Name: <%= @user.surename + ' ' + @user.name + ' ' + @user.second_name %> </li>
+			<li> Login: <%= @user.login %> </li>
+			<li> Birthday: <%= @user.birthday %> </li>
+			<li> Email: <%= @user.email %> </li>
+			<li> <%= link_to 'Back to list', root_path, class: 'btn btn-primary' %> </li>
+		</ul>
+
+	</div>
+
+</div>

@@ -1,0 +1,60 @@
+@import "bootstrap";
+
+body, .jumbotron {
+	background: #f6f6f6;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.signup {
+	clear: both;
+	background: #000;
+	width: 100%;
+	height: 5em;
+}
+
+.navbar {
+	padding: 0 2em;
+}
+
+.signup-panel {
+	text-align: center;
+	background: #f2f2f2;
+}
+
+.signup-panel h2 {
+	margin: 0 0 1em 0;
+}
+
+.list li {
+	padding: 0.5em 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.user-list h3 {
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+.profile-tab {
+	
+	padding: 1em 0;
+	
+	ul li {
+		padding: 	0.5em 0;
+	}
+
+	h4 {
+		padding: 0.5em 0 0.5em 0;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.profile {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+

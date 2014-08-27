@@ -6,7 +6,8 @@ gem 'rails', '3.2.19'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -33,6 +34,11 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.2'
+end
+
+group :development, :production do
+  gem 'populator', '~> 1.0.0'
+  gem 'faker', '~> 1.4.2'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
