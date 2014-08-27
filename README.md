@@ -9,3 +9,6 @@ Gems in use for testing
 - Capybara
 - Selenium-webdriver
 - Guard-rspec
+- FactoryGirl
+
+App is populated with Faker gem and localised with I18n
